@@ -14,8 +14,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnBBoardingScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
-      case Routes.splashScreen:
-        return MaterialPageRoute(builder: (_) => const SplashScreen());
+      // case Routes.splashScreen:
+      //   return MaterialPageRoute(builder: (_) => const SplashScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
