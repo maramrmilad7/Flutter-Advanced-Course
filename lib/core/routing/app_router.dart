@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced/core/routing/routes.dart';
 import 'package:flutter_advanced/features/login/ui/login_screen.dart';
 import 'package:flutter_advanced/features/onboarding/onbooarding_screen.dart';
+import 'package:flutter_advanced/features/splash/splash_ui.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
@@ -13,6 +14,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnBBoardingScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case Routes.splashScreen:
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
